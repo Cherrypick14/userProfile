@@ -1,0 +1,60 @@
+.register{
+    height:calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(255, 255, 255, 0.137),
+    rgba(255,255,255,0.3)), 
+    url("/public/himalayas.jpg");
+    background-size: cover;
+}
+.registerTitle{
+    font-size:50px;
+    color:#000000;
+    text-transform: uppercase;
+}
+.registerform{
+     margin-top: 20px;
+     display: flex;
+     flex-direction: column;
+}
+.registerform >label{
+     margin:10px 0;
+     color:#FFFFFF;
+     font-weight: 500;
+}
+.registerinput{
+    padding: 10px;
+    background:white;
+    border:none;
+}
+.registerButton{
+    margin-top:20px;
+    border:none;
+    outline: none;
+    border-radius:5px;
+    cursor: pointer;
+    background-color:#9A3DE3;
+    padding:10px;
+    color:white;
+}
+.registerButton:hover{
+    background-color:#7F5A83;
+    transition: 1.25s ease-in-out;
+   
+}
+.moreInfo{
+    padding-top: 1.5em;
+}
+.moreInfo >span{
+    color:#FFFFFF;
+    padding-right:1em;
+
+}
+.moreInfo >.two{
+    text-decoration: underline;
+    padding-left:.5em;
+    color:blue;
+
+}

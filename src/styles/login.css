@@ -1,0 +1,65 @@
+.login{
+    height:calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(14, 7, 7, 0.103),
+    rgba(255,255,255,0.3)), 
+    url("/public/mountain-clippers.jpg");
+    background-size: cover;
+    /* background-position: center; */
+}
+.loginTitle{
+    font-size:50px;
+    color:#310C1D;
+}
+.loginform{
+     margin-top: 20px;
+     display: flex;
+     flex-direction: column;
+}
+.loginform >label{
+     margin:10px 0;
+}
+.logininput{
+    padding: 10px;
+    background:white;
+     border:none;
+}
+.loginButton{
+    margin-top:20px;
+    border:3px solid #9A3DE3;
+    border-radius:5px;
+    cursor: pointer;
+    /* background-color:#010A13; */
+    padding:10px;
+    color:#000000;
+}
+.loginButton:hover{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+    transition: .5s ease-out;
+}
+.loginRegisterButton{
+     position: absolute;
+     top:60px;
+     right:20px;
+     cursor: pointer;
+     background:#8A3953;
+     color:whitesmoke;
+     border-radius:5px;
+     padding:10px;
+     border:none;
+}
+.moreinfo2{
+   
+     padding-top: 2em;
+}
+.moreinfo2>.forgotpass{
+    padding-left:2.0em;
+    text-decoration: underline;
+}
+.moreinfo2>span:hover{
+    cursor:pointer;
+    color:blue;
+}
