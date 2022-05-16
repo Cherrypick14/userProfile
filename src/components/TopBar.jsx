@@ -3,7 +3,7 @@ import '../styles/topbar.css'
 import {Link} from "react-router-dom"
 
 const TopBar = () => {
-   const user = false;
+   const user = true;
   return (
     <div className='top'>
       <div className="topLeft">
@@ -18,14 +18,14 @@ const TopBar = () => {
         <li className="topListItem"><Link  className='link'to ="/">ABOUT</Link></li>
         <li className="topListItem"><Link className='link' to ="/">CONTACT</Link></li>
         <li className="topListItem"><Link className='link' to ="/">BLOG</Link></li>
-        <li className="topListItem"><Link className='link' to ="/settings">SETTINGS</Link></li>
+        <li className="topListItem"><Link className='link active' to ="/settings">SETTINGS</Link></li>
         
       </ul>
     </div>
     <div className="topRight">
       
         {user? (
-          <img className="topImg" src={process.env.PUBLIC_URL + "/cat-profile.jpg"} alt="" />
+          <img className="topImg" src={process.env.PUBLIC_URL + "/ice-skating.jpg"} alt="" />
          ):(
           <ul className="topList" >
             <li className="topListItem">
@@ -36,8 +36,12 @@ const TopBar = () => {
             </li>
           </ul>
           )
-        }  
-        <i className=" topSearchIcon fa-solid fa-magnifying-glass"></i>
+        } 
+        <div class="input-placeholder">
+          <input type="text" name="searchuserName" id="searchuserName" placeholder="Search user"/><span className="topSearchIcon fa-solid fa-magnifying-glass"></span>
+     </div> 
+        {/* <input type="text"<i className=" topSearchIcon fa-solid fa-magnifying-glass"></i> placeholder="search user"/> */}
+        
       </div>
     
     </div>
