@@ -47,10 +47,21 @@
     width:60%;
     height:80%;
 }
-.sideBarListItem{
+.sideBarList{
+    list-style: none;
+}
+.sideBarList>li{
     display:block;
     width: 70%;
     margin-top:15px;
     cursor: pointer;
     padding:.5em;
 }
+.sideBarList>li>a{
+   text-decoration: none;
+}
+.sideBarList>li>a:hover{
+    text-decoration: underline;
+ }
+
+

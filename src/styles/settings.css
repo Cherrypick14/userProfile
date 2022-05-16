@@ -13,19 +13,23 @@
      object-fit: cover;
 }
 .settingsTitle{
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; */
 }
 .settingsUpdateTitle{
     font-size: 25px;
     color:#8A3953;
     margin-bottom: 20px;
-    font-weight:600;
+    font-weight:700;
+}
+input{
+    width:70%;
 }
 textarea{
     background:transparent;
     border-radius:5px;
+    width:70%;
     border:1px solid #000;
     outline:none;
 }
@@ -34,7 +38,8 @@ textarea::placeholder{
    padding-top: .5em;
 }
  .settingsDeletebtn{
-   font-size: 12px;
+   font-size: 15px;
+   align-items: center;
    color:#FFFFFF;
    background: red;
    padding:10px;
@@ -45,11 +50,8 @@ textarea::placeholder{
    width:150px;
 }
 .settingsDeletebtn:hover{
-    font-size: 12px;
-    color:#FFFFFF;
-    background: red;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: .75s ease-out;
  } 
 .settingsForm{
@@ -94,7 +96,7 @@ textarea::placeholder{
     width: 150px;
     margin-top: 15px;
     font-size: 15px;
-    align-self: center;
+    /* align-self: center; */
     background-color:#053061 ;
     color:white;
     padding:10px;
@@ -113,7 +115,8 @@ textarea::placeholder{
     padding-top:1.5em;
 }
 .updatePassword{
-    font-size: 12px;
+    font-size: 15px;
+    align-items: center;
     color:#FFFFFF;
     background: #053061;
     padding:10px;
